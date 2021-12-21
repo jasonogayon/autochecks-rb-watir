@@ -2,6 +2,8 @@
 
 ## Running Watir UI Tests
 
+![Sample Test Run On a Terminal](./docs/demo.gif)
+
 ---
 
 ### Dependencies
