@@ -1,1 +1,1 @@
-default: FIG_NEWTON_FILE=default.yml --no-source --color --format pretty
+default: FIG_NEWTON_FILE=default.yml --no-source --color --format pretty --format html --out report/report.html 

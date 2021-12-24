@@ -37,5 +37,13 @@
 
 ---
 
+### Reports
+
+![Sample Cucumber Test Report](./docs/12242021-test-report.png)
+
+Running the tests in whatever mode generates a test report in HTML format, found inside the **report** directory. If a test fails, a screenshot will be generated inside the **screenshots** directory for the test.
+
+---
+
 Author: Jason B. Ogayon \
 Software Engineer and Software Tester

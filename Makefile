@@ -13,7 +13,8 @@ help:
 	@echo ""
 	@echo "Commands:"
 	@echo ""
-	@echo "    ui tags='[tags]'          Run a test, given cucumber tags"
+	@echo "    ui tags='[tags]'         Run a test, given cucumber tags, with a browser launching"
+	@echo "    h tags='[tags]'          Run a test, given cucumber tags, headlessly"
 	@echo ""
 
 

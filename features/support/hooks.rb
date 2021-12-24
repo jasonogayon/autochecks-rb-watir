@@ -1,3 +1,7 @@
+# Create 'report' and 'screenshots' directories if they do not exist yet
+Dir::mkdir('report') if not File.directory?('report')
+Dir::mkdir('screenshots') if not File.directory?('screenshots')
+
 # Browser driver paths
 path_chromedrvr = Selenium::WebDriver::Chrome.path
 
@@ -28,6 +32,14 @@ Before do
     end
   rescue
     retry unless (tries -= 1).zero?
+  end
+end
+
+After do |scenario|
+  if scenario.failed?
+    screenshot = "./screenshots/fail_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '').downcase}.png"
+    @browser.driver.save_screenshot(screenshot)
+    embed screenshot, 'image/png'
   end
 end
 
